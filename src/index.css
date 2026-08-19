@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paint-base: #0A0A0C;
+    --paint-highlight: #474C59;
+    --paint-gloss: 0.95;
+    --wheel-finish: #6B7280;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0C0C0E;
+    color: #E5E8D9;
+    letter-spacing: -0.01em;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Tabular figures for all numerics so values don't jitter when configuration changes */
+.tabular-nums,
+.font-spec-data {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Specific Font Token Classes per DESIGN.md */
+.font-headline-md,
+.font-display {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.font-spec-data {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-label-sm {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Vehicle composite container and layer transitions */
+.vehicle-composite-container {
+  aspect-ratio: 43 / 24;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .vehicle-composite-container,
+  .vehicle-composite-container div,
+  .vehicle-composite-container img {
+    transition: background-color 200ms ease-out, opacity 200ms ease-out, filter 200ms ease-out;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0C0C0E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A2C32;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444936;
+}

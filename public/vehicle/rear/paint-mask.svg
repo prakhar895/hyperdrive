@@ -1,0 +1,16 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Transparent Canvas with Painted Body Panels ONLY -->
+  <defs>
+    <linearGradient id="body-tint" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E5E5E5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Painted Body Surfaces (Alpha Mask) -->
+  <g id="painted-body-panels" fill="url(#body-tint)">
+    <!-- Hood, Fenders, Doors, Rear Quarter Panels -->
+    <path d="M 320 740 C 350 670, 480 590, 680 540 C 850 490, 1150 490, 1380 560 C 1540 610, 1620 680, 1640 750 L 1580 780 C 1450 785, 1320 785, 1200 780 C 1140 710, 1020 710, 960 780 C 800 780, 680 780, 560 780 C 500 710, 380 710, 320 780 Z"/>
+    <path d="M 680 540 C 760 410, 880 370, 1080 370 C 1220 370, 1320 420, 1380 560 Z"/>
+  </g>
+</svg>

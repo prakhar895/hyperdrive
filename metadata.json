@@ -1,0 +1,6 @@
+{
+  "name": "HyperDrive",
+  "description": "High-performance technical vehicle configurator, telemetry analytics, and architectural showroom for HyperDrive electric supercars.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,63 @@
+{
+  "acceleration": {
+    "title": "Longitudinal G-Force Telemetry",
+    "unit": "G",
+    "zeroToHundredTime": "1.85s",
+    "peakG": 2.84,
+    "torqueVectoringRatio": "98.5 %",
+    "slipAngle": "1.2 °",
+    "timePoints": [
+      { "time": 0.0, "gForce": 0.08, "speed": 0, "slip": 0.2 },
+      { "time": 0.2, "gForce": 1.42, "speed": 18, "slip": 0.9 },
+      { "time": 0.5, "gForce": 2.35, "speed": 42, "slip": 1.4 },
+      { "time": 0.8, "gForce": 2.76, "speed": 64, "slip": 1.2 },
+      { "time": 1.0, "gForce": 2.84, "speed": 78, "slip": 1.1 },
+      { "time": 1.3, "gForce": 2.71, "speed": 92, "slip": 1.0 },
+      { "time": 1.6, "gForce": 2.45, "speed": 104, "slip": 0.8 },
+      { "time": 1.85, "gForce": 2.28, "speed": 115, "slip": 0.7 },
+      { "time": 2.2, "gForce": 2.12, "speed": 130, "slip": 0.6 },
+      { "time": 2.6, "gForce": 2.05, "speed": 152, "slip": 0.6 },
+      { "time": 3.0, "gForce": 2.18, "speed": 178, "slip": 0.5 },
+      { "time": 3.4, "gForce": 2.35, "speed": 204, "slip": 0.5 },
+      { "time": 3.8, "gForce": 2.54, "speed": 232, "slip": 0.4 },
+      { "time": 4.2, "gForce": 2.72, "speed": 258, "slip": 0.4 },
+      { "time": 4.5, "gForce": 2.82, "speed": 275, "slip": 0.3 }
+    ]
+  },
+  "powerCurve": {
+    "title": "Dual-Inverter Power & Torque Curve",
+    "maxRpm": 20000,
+    "peakKw": 882,
+    "peakTorqueNm": 1420,
+    "rpmPoints": [
+      { "rpm": 0, "frontKw": 0, "rearKw": 0, "totalTorqueNm": 1420 },
+      { "rpm": 2000, "frontKw": 88, "rearKw": 182, "totalTorqueNm": 1420 },
+      { "rpm": 4000, "frontKw": 174, "rearKw": 358, "totalTorqueNm": 1420 },
+      { "rpm": 6000, "frontKw": 245, "rearKw": 510, "totalTorqueNm": 1390 },
+      { "rpm": 8000, "frontKw": 285, "rearKw": 597, "totalTorqueNm": 1280 },
+      { "rpm": 10000, "frontKw": 290, "rearKw": 592, "totalTorqueNm": 1060 },
+      { "rpm": 12000, "frontKw": 288, "rearKw": 585, "totalTorqueNm": 880 },
+      { "rpm": 14000, "frontKw": 280, "rearKw": 565, "totalTorqueNm": 730 },
+      { "rpm": 16000, "frontKw": 268, "rearKw": 535, "totalTorqueNm": 620 },
+      { "rpm": 18000, "frontKw": 250, "rearKw": 490, "totalTorqueNm": 530 },
+      { "rpm": 20000, "frontKw": 225, "rearKw": 440, "totalTorqueNm": 450 }
+    ]
+  },
+  "thermal": {
+    "title": "Continuous Track Thermal Dynamics",
+    "maxSafeTemp": 85,
+    "coolingCapacityKw": 45,
+    "lapTimePoints": [
+      { "lap": 1, "batteryTemp": 32.5, "inverterTemp": 36.0, "statorTemp": 41.2, "ambientTemp": 24.0 },
+      { "lap": 2, "batteryTemp": 38.2, "inverterTemp": 44.5, "statorTemp": 52.8, "ambientTemp": 24.1 },
+      { "lap": 3, "batteryTemp": 43.1, "inverterTemp": 51.0, "statorTemp": 61.4, "ambientTemp": 24.3 },
+      { "lap": 4, "batteryTemp": 47.8, "inverterTemp": 56.4, "statorTemp": 67.9, "ambientTemp": 24.4 },
+      { "lap": 5, "batteryTemp": 51.2, "inverterTemp": 60.2, "statorTemp": 72.1, "ambientTemp": 24.6 },
+      { "lap": 6, "batteryTemp": 53.4, "inverterTemp": 62.8, "statorTemp": 74.5, "ambientTemp": 24.7 },
+      { "lap": 7, "batteryTemp": 54.8, "inverterTemp": 64.1, "statorTemp": 75.8, "ambientTemp": 24.8 },
+      { "lap": 8, "batteryTemp": 55.5, "inverterTemp": 64.9, "statorTemp": 76.4, "ambientTemp": 24.9 },
+      { "lap": 9, "batteryTemp": 55.8, "inverterTemp": 65.2, "statorTemp": 76.8, "ambientTemp": 25.0 },
+      { "lap": 10, "batteryTemp": 56.0, "inverterTemp": 65.4, "statorTemp": 77.0, "ambientTemp": 25.1 }
+    ]
+  }
+}

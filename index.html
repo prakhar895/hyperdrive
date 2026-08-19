@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HyperDrive | The Apex All-Electric Hypercar</title>
+    <meta name="description" content="HyperDrive is an ultra-high performance all-electric hypercar featuring inline SVG real-time configuration, live 100Hz telemetry analysis, and modular system architecture." />
+    <meta property="og:title" content="HyperDrive | The Apex All-Electric Hypercar" />
+    <meta property="og:description" content="Configure your bespoke HyperDrive all-electric hypercar with real-time SVG rendering, active aerodynamics, and telemetry visualization." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Preload vehicle layered base image -->
+    <link rel="preload" as="image" type="image/webp" href="/vehicle/base.webp" fetchpriority="high">
+    <link rel="preload" as="image" type="image/webp" href="/vehicle/paint-mask.webp">
+    <link rel="preload" as="image" type="image/webp" href="/vehicle/wheel-mask.webp">
+    <link rel="preload" as="image" type="image/webp" href="/vehicle/specular.webp">
+    <link rel="preload" as="image" type="image/webp" href="/vehicle/lights.webp">
+  </head>
+  <body class="bg-[#0C0C0E] text-[#E5E8D9] font-sans antialiased overflow-x-hidden min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

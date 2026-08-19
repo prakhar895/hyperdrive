@@ -1,0 +1,33 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#0C0C0E"/>
+  <!-- Studio Floor & Softbox Lighting -->
+  <radialGradient id="floor" cx="50%" cy="75%" r="60%">
+    <stop offset="0%" stop-color="#24262E" stop-opacity="0.6"/>
+    <stop offset="40%" stop-color="#141519" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#0C0C0E" stop-opacity="1"/>
+  </radialGradient>
+  <rect y="400" width="1920" height="680" fill="url(#floor)"/>
+  
+  <!-- Ground Contact Shadow -->
+  <ellipse cx="960" cy="840" rx="720" ry="75" fill="#000000" opacity="0.95"/>
+  <ellipse cx="960" cy="830" rx="550" ry="40" fill="#000000"/>
+  
+  <!-- Neutral Grayscale Car Silhouette Base -->
+  <g id="car-base-body" fill="#3A3D45">
+    <path d="M 320 740 C 350 670, 480 590, 680 540 C 850 490, 1150 490, 1380 560 C 1540 610, 1620 680, 1640 750 L 1580 780 C 1450 785, 1320 785, 1200 780 C 1140 710, 1020 710, 960 780 C 800 780, 680 780, 560 780 C 500 710, 380 710, 320 780 Z"/>
+    <!-- Greenhouse Canopy -->
+    <path d="M 680 540 C 760 410, 880 370, 1080 370 C 1220 370, 1320 420, 1380 560 C 1240 545, 1060 535, 860 535 Z" fill="#181A1F"/>
+    <!-- Side Windows Glass -->
+    <path d="M 740 520 C 800 440, 890 410, 1050 410 C 1150 410, 1220 445, 1260 520 Z" fill="#0D0E12"/>
+    <!-- Carbon Splitters & Diffusers -->
+    <path d="M 280 765 L 420 785 L 1540 785 L 1660 765 L 1630 805 L 290 805 Z" fill="#141518"/>
+  </g>
+  
+  <!-- Subtle Grayscale Panel Lines -->
+  <path d="M 680 540 L 780 760 M 1380 560 L 1260 760" stroke="#1A1C22" stroke-width="4"/>
+  
+  <!-- Camera Label Indicator (Neutral) -->
+  <text x="960" y="960" fill="#4B5563" font-family="monospace" font-size="20" text-anchor="middle" letter-spacing="4">
+    HYPERDRIVE BASE RENDER [SIDE PROFILE] // NEUTRAL GRAYSCALE
+  </text>
+</svg>

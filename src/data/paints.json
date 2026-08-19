@@ -1,0 +1,91 @@
+[
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "category": "metallic",
+    "paintBase": "#0A0A0C",
+    "paintHighlight": "#474C59",
+    "paintGloss": 0.95,
+    "swatchBg": "#050608",
+    "priceDelta": 0,
+    "description": "Deep multi-stage optical black with cold carbon metallic micro-flake."
+  },
+  {
+    "id": "tungsten",
+    "name": "Tungsten",
+    "category": "metallic",
+    "paintBase": "#585E6B",
+    "paintHighlight": "#D1D5DB",
+    "paintGloss": 0.95,
+    "swatchBg": "#717888",
+    "priceDelta": 2000,
+    "description": "Liquid titanium finish with high-contrast specular reflections."
+  },
+  {
+    "id": "velocity-red",
+    "name": "Velocity Red",
+    "category": "metallic",
+    "paintBase": "#881313",
+    "paintHighlight": "#F87171",
+    "paintGloss": 0.88,
+    "swatchBg": "#991B1B",
+    "priceDelta": 2500,
+    "description": "Triple-coat competition crimson with high-gloss optical clear coat."
+  },
+  {
+    "id": "stratosphere",
+    "name": "Stratosphere",
+    "category": "metallic",
+    "paintBase": "#172554",
+    "paintHighlight": "#60A5FA",
+    "paintGloss": 0.92,
+    "swatchBg": "#1E3A8A",
+    "priceDelta": 2500,
+    "description": "Deep ionospheric blue with dual-refractive pearlescent pigments."
+  },
+  {
+    "id": "apex-white",
+    "name": "Apex White",
+    "category": "gloss",
+    "paintBase": "#D1D5DB",
+    "paintHighlight": "#FFFFFF",
+    "paintGloss": 0.82,
+    "swatchBg": "#F3F4F6",
+    "priceDelta": 1500,
+    "description": "Clean high-albedo track white engineered for thermal efficiency."
+  },
+  {
+    "id": "tactical-green",
+    "name": "Tactical Green",
+    "category": "matte",
+    "paintBase": "#252B1E",
+    "paintHighlight": "#4A5538",
+    "paintGloss": 0.22,
+    "swatchBg": "#3B4232",
+    "priceDelta": 3000,
+    "description": "Low-sheen military matte olive with anti-glare infrared attenuation."
+  },
+  {
+    "id": "solar-flare",
+    "name": "Solar Flare",
+    "category": "metallic",
+    "paintBase": "#C2410C",
+    "paintHighlight": "#FDBA74",
+    "paintGloss": 0.94,
+    "swatchBg": "#EA580C",
+    "priceDelta": 3500,
+    "description": "High-energy radiant orange with iridescent golden undertones."
+  },
+  {
+    "id": "stealth-matte",
+    "name": "Stealth Matte",
+    "category": "matte",
+    "paintBase": "#121316",
+    "paintHighlight": "#2B2D36",
+    "paintGloss": 0.18,
+    "swatchBg": "#1C1C1C",
+    "pattern": "repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255,255,255,0.08) 2px, rgba(255,255,255,0.08) 4px)",
+    "priceDelta": 4500,
+    "description": "Visible raw carbon fiber weave cured in anti-reflective satin clearcoat."
+  }
+]
