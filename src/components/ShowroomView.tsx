@@ -1,6 +1,5 @@
 import React from 'react';
 import { useConfig } from '../context/ConfigContext';
-import { VehicleRenderer } from './VehicleRenderer';
 
 export const ShowroomView: React.FC = () => {
   const { config, setCurrentTab, setIsReserveModalOpen, currentTrim } = useConfig();
@@ -43,7 +42,14 @@ export const ShowroomView: React.FC = () => {
 
         {/* 5-Layer Composite Vehicle Renderer */}
         <div className="w-full max-w-[1100px] h-auto drop-shadow-2xl">
-          <VehicleRenderer config={config} isConfigurator={false} />
+          <img
+  src="/vehicle/hero.webp"
+  alt="HyperDrive hypercar, front three-quarter studio view"
+  width={2752}
+  height={1536}
+  className="w-full h-auto"
+  fetchPriority="high"
+/>
         </div>
       </div>
 
