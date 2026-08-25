@@ -3,7 +3,7 @@
 
 An interactive marketing and configurator site for a fictional electric hypercar, built as a frontend engineering exercise.
 
-**Live site:** (https://hyperdrive-chi.vercel.app)
+**Live site:** [View the site](https://hyperdrive-chi.vercel.app)
 
 ---
 
