@@ -144,7 +144,7 @@ src/
 ├── App.tsx                  Section order and wiring
 └── main.tsx                 Entry point
 ```
-ConfigContext.tsx is the single source of truth for the build. Paint changes write CSS custom properties and nothing else, so no component re-renders and no image is swapped.
+
 ---
 
 ## Notes
