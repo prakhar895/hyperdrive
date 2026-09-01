@@ -121,27 +121,33 @@ npm run preview
 public/
 └── vehicle/
     ├── base.webp            Neutral grayscale render
+    ├── hero.webp            Showroom hero composite
     ├── paint-mask.webp      Alpha mask driving paint coverage
     ├── wheel-mask.webp      Wheel finish mask
     ├── specular.webp        Highlights and reflections
     └── lights.webp          Emissive headlight and tail light
 src/
 ├── data/
-│   ├── paints.ts            Eight finishes with gloss characteristics
-│   ├── trims.ts             Trim levels, specifications, pricing
-│   └── telemetry.ts         Acceleration, power and torque series
+│   ├── configOptions.ts     Wheels, interiors, trims and pricing rules
+│   ├── paints.json          Eight finishes with base and highlight values
+│   └── telemetry.json       Acceleration, power curve and thermal series
 ├── context/
 │   └── ConfigContext.tsx    Configuration state, URL and localStorage sync
 ├── components/
 │   ├── VehicleRenderer.tsx  Layered composite, paint via CSS variables
-│   ├── Showroom.tsx         Full-bleed hero with hotspot buttons
-│   ├── Configurator.tsx     Paint, wheel, interior and aero controls
-│   ├── PriceSummary.tsx     Price derived from configuration
-│   ├── Telemetry.tsx        Tab pattern wrapping the chart views
-│   ├── LineChart.tsx        Inline SVG chart with direct series labels
-│   ├── DataTable.tsx        Visually hidden accessible chart fallback
-│   └── TrimTable.tsx        Sticky-header table, stacked cards on mobile
+│   ├── VehicleSVG.tsx       Inline SVG vehicle with named path groups
+│   ├── CinematicVehicleViewer.tsx  Viewpoint states and entrance motion
+│   ├── ShowroomView.tsx     Full-bleed hero with headline stats
+│   ├── ConfiguratorView.tsx Swatches, segmented controls, live price
+│   ├── PerformanceView.tsx  ARIA tabs, inline SVG charts, annotations
+│   ├── TechnicalView.tsx    Trim comparison table, stacked on mobile
+│   ├── ReserveModal.tsx     Configuration summary and reservation flow
+│   ├── Navbar.tsx           Section navigation
+│   ├── LegalViews.tsx       Disclaimer and fine print views
+│   └── Footer.tsx           Fine print
+├── types.ts                 Configuration, paint and telemetry types
 ├── App.tsx                  Section order and wiring
+├── index.css                Tailwind layers and design tokens
 └── main.tsx                 Entry point
 ```
 
