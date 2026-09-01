@@ -98,13 +98,13 @@ No animation library, no charting library, no 3D library.
 ## Running locally
 
 ```bash
-git clone https://github.com/[YOUR-USERNAME]/hyperdrive.git
+git clone https://github.com/prakhar895/hyperdrive.git
 cd hyperdrive
 npm install
 npm run dev
 ```
 
-Open the address printed in the terminal, usually `http://localhost:3000`.
+No API keys, no environment variables, no backend, no external services. The vehicle composite is served from public/, so the app makes zero third-party network requests at runtime.
 
 To build for production:
 
@@ -115,17 +115,36 @@ npm run preview
 
 ---
 
-## Project structure
+## Structure
 
 ```
 public/
-  vehicle/          Layered vehicle composite assets
+└── vehicle/
+    ├── base.webp            Neutral grayscale render
+    ├── paint-mask.webp      Alpha mask driving paint coverage
+    ├── wheel-mask.webp      Wheel finish mask
+    ├── specular.webp        Highlights and reflections
+    └── lights.webp          Emissive headlight and tail light
 src/
-  components/       View components and the vehicle renderer
-  context/          Configuration state
-  data/             Paint options, trim specs, telemetry data
+├── data/
+│   ├── paints.ts            Eight finishes with gloss characteristics
+│   ├── trims.ts             Trim levels, specifications, pricing
+│   └── telemetry.ts         Acceleration, power and torque series
+├── context/
+│   └── ConfigContext.tsx    Configuration state, URL and localStorage sync
+├── components/
+│   ├── VehicleRenderer.tsx  Layered composite, paint via CSS variables
+│   ├── Showroom.tsx         Full-bleed hero with hotspot buttons
+│   ├── Configurator.tsx     Paint, wheel, interior and aero controls
+│   ├── PriceSummary.tsx     Price derived from configuration
+│   ├── Telemetry.tsx        Tab pattern wrapping the chart views
+│   ├── LineChart.tsx        Inline SVG chart with direct series labels
+│   ├── DataTable.tsx        Visually hidden accessible chart fallback
+│   └── TrimTable.tsx        Sticky-header table, stacked cards on mobile
+├── App.tsx                  Section order and wiring
+└── main.tsx                 Entry point
 ```
-
+ConfigContext.tsx is the single source of truth for the build. Paint changes write CSS custom properties and nothing else, so no component re-renders and no image is swapped.
 ---
 
 ## Notes
